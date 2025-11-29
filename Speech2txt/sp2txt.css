@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(222, 177, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 50%;
+    height: 70%;
+    inline-size: auto;
+    background-color: burlywood; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+}
+#result{
+    width: 400px;
+    min-height: 300px;
+    margin: 10px;
+    border: solid;
+    background-color:rgb(255, 200, 193);
+}
+button{
+    width: 50px;
+    height: 50px;
+    border: solid black 2px;
+    border-radius: 20px;
+    color: rgb(150, 95, 23);
+    background-color: bisque;
+}
