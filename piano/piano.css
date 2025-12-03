@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.root{
+    
+}
+body{
+    background-color: rgb(211, 189, 231);
+}
+h1{
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.wrapper{
+    margin: 10px;
+    padding: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.piano{
+    display: flex;
+    border: solid 2px;
+}
+.key{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+.white{
+    background-color: white;
+    border: solid 1px black;
+    width: 50px;
+    height: 200px;
+} 
+.black{
+    background-color: black;
+    border: solid 1px white;
+    width: 50px;
+    height: 100px;
+}
