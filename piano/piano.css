@@ -1,49 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.root{
-    
-}
-body{
-    background-color: rgb(211, 189, 231);
-}
-h1{
-    margin-top: 5px;
-    text-align: center;
-    padding: 5px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: antiquewhite;
 }
 
-.wrapper{
-    margin: 10px;
-    padding: auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+h1 {
+  text-align: center;
+  color: #333;
 }
-.piano{
-    display: flex;
-    border: solid 2px;
-}
-.key{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
 
-    
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
 }
-.white{
-    background-color: white;
-    border: solid 1px black;
-    width: 50px;
-    height: 200px;
-} 
-.black{
-    background-color: black;
-    border: solid 1px white;
-    width: 50px;
-    height: 100px;
+
+.piano {
+
+  display: flex;
+  position: relative;
+  width: 630px ;
+  height: 400px;
+  background-color: #ddd;
+  border: 1px solid #333;
+  border-radius: 15px;
 }
+
+.key {
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+.key.white {
+  position: relative;
+  width: 90px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #333;
+  box-shadow: inset 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.key.black {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+  background-color: #000;
+  z-index: 10;
+  border-radius: 0 0 5px 5px;
+}
+
+.key.black:hover {
+  background-color: #222;
+}
+
+.white:hover {
+  background-color: #f0f0f0;
+}
+
+.active.white {
+  background-color: #ddd;
+  box-shadow: inset 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.active.black {
+  background-color: #333;
+}
+
+.note-label {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.white .note-label {
+  color: #333;
+}
+
+.black .note-label {
+  color: white;
+}
+
+
+#black-db { left: 65px; }
+#black-eb { left: 155px; }
+#black-gb { left: 340px; }
+#black-ab { left: 430px; }
+#black-bb { left: 520px; }
