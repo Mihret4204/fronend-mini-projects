@@ -24,15 +24,15 @@ h1 {
   position: relative;
   width: 630px ;
   height: 400px;
-  background-color: #ddd;
-  border: 1px solid #333;
+  background-color: #f4f4f4;;
   border-radius: 15px;
 }
 
 .key {
   cursor: pointer;
   user-select: none;
-  
+  border: 5px solid #333;
+  border-radius: 15px;
 }
 
 .key.white {
